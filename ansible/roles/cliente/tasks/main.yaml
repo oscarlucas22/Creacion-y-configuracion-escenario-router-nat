@@ -1,0 +1,7 @@
+- name: change client network
+  template:
+    src: interfaces
+    dest: /etc/network/interfaces
+    mode: 0644
+  notify:
+    - reiniciar maquina
